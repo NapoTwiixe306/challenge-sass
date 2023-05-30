@@ -34,6 +34,30 @@ article section#selling-points {
   flex-grow: 2;
   flex-basis: 100%;
 }
+article section .advantages li.adv-item:nth-child(1) {
+  background-color: #FF5733;
+  color: #000;
+}
+article section .advantages li.adv-item:nth-child(2) {
+  background-color: #FFA933;
+  color: #000;
+}
+article section .advantages li.adv-item:nth-child(3) {
+  background-color: #FFD733;
+  color: #000;
+}
+article section .advantages li.adv-item:nth-child(4) {
+  background-color: #A5FF33;
+  color: #000;
+}
+article section .advantages li.adv-item:nth-child(5) {
+  background-color: #33FFC2;
+  color: #000;
+}
+article section .advantages li.adv-item:nth-child(6) {
+  background-color: #337CFF;
+  color: #000;
+}
 article code {
   background: #000;
   border: 1px solid #6b717f;
@@ -99,6 +123,10 @@ h3 {
 
 .warning {
   background-color: orange;
+}
+
+footer h3 {
+  padding: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

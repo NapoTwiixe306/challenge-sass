@@ -1,4 +1,4 @@
-@import "./colors.scss";
+@import "./Variables.scss";
 @import "./mixins.scss";
 
 body {
@@ -34,6 +34,18 @@ article{
             flex-grow: 2;
             flex-basis: 100%;
         }
+
+        .advantages {
+            li.adv-item {
+                @for $i from 1 through length($colors) {
+                    &:nth-child(#{$i}) {
+                        background-color: nth($colors, $i);
+                        color: if(lightness(nth($colors, $i)) > 50, #000, #fff);
+                    }
+                }
+            }
+        }
+    
     }
     code{
         background: $Black;
@@ -58,6 +70,7 @@ article{
             width: 40%;
         }
     }
+
 }
 
 h1, h2, h3{ color: $TitleColor;}
@@ -95,3 +108,7 @@ h3{
 
 .warning {background-color: $Orange;}
 
+
+footer h3 {
+    padding: $footer-h3-padding;
+}
