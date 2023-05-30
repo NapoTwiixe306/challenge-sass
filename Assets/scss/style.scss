@@ -11,6 +11,8 @@ body {
 }
 
 main {
+    padding-top: 0;
+    padding-bottom: 0;
     padding: 0 1em;
 }
 
@@ -83,7 +85,13 @@ h3{
 
 .success {background-color: $Green;}
 
-.error {background-color: $Red;}
+.error {
+    background-color: $Red;
+    transition: 0.3s;
+    &:hover{
+        background-color: $Green;
+    }
+}
 
 .warning {background-color: $Orange;}
 
